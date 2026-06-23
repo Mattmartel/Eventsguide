@@ -1,0 +1,73 @@
+/* ============================================================
+   BusinessDesk — Typography scale
+   Headlines: serif (Newsreader→Feature Text). UI/labels: Inter.
+   Long-form body: serif (Source Serif 4→Tiempos Text).
+   Sizes & line-heights lifted from the Figma "Typography Scales".
+   ============================================================ */
+
+:root {
+  /* ── Heading scale (tight leading, serif) ────────────────── */
+  --heading-3xl: 32px;
+  --heading-2xl: 28px;
+  --heading-xl:  26px;
+  --heading-lg:  24px;
+  --heading-md:  20px;
+  --heading-sm:  18px;
+  --heading-xs:  16px;
+  --heading-xxs: 14px;
+  --leading-tight: 1.15;
+  --leading-snug:  1.25;
+
+  /* ── Body scale ──────────────────────────────────────────── */
+  --body-2xl: 24px;
+  --body-xl:  20px;
+  --body-lg:  18px;
+  --body-md:  16px;
+  --body-sm:  14px;
+  --body-xs:  12px;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+
+  /* ── Label / UI scale ────────────────────────────────────── */
+  --label-lg: 16px;
+  --label-md: 14px;
+  --label-sm: 12px;
+  --label-xs: 11px;
+  --tracking-label: 0.04em;   /* uppercase eyebrows / kickers */
+
+  /* ── Weights (figma: bold = 650) ─────────────────────────── */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+  --weight-bold: 650;
+}
+
+/* ── Optional utility classes (cards & specimens use them) ──── */
+.bd-headline {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--sys-text-dark);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.bd-body {
+  font-family: var(--font-body-serif);
+  font-weight: var(--weight-regular);
+  font-size: var(--body-md);
+  line-height: var(--leading-relaxed);
+  color: var(--sys-text-mid);
+  text-wrap: pretty;
+}
+.bd-kicker {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-bold);
+  font-size: var(--label-sm);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+.bd-meta {
+  font-family: var(--font-sans);
+  font-size: var(--label-md);
+  color: var(--sys-text-light);
+}
