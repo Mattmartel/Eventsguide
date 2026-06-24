@@ -21,8 +21,18 @@
   }
 
   function Slot(props) {
+    const id = props.id || '';
+    let defaultSrc = props.src || '';
+    if (!defaultSrc) {
+      if (/sponsor/i.test(id)) defaultSrc = 'uploads/pasted-1782189055910-0.png';
+      else if (/hero/i.test(id)) defaultSrc = 'screenshots/02-hero.png';
+      else if (id === 'hero-img') defaultSrc = 'screenshots/02-hero.png';
+      else if (id.indexOf('v-') === 0) defaultSrc = 'screenshots/grid3.png';
+      else defaultSrc = 'screenshots/01-home1.png';
+    }
     return React.createElement("image-slot", {
       id: props.id,
+      src: defaultSrc,
       placeholder: props.placeholder || "Drop an image",
       shape: props.shape || "rect",
       style: Object.assign({ display: "block", width: "100%", height: "100%" }, props.style),
