@@ -1,0 +1,56 @@
+/* ============================================================
+   BusinessDesk — Brand color aliases
+   Friendly names over the raw Figma token layer (fig-tokens.css).
+   Use these in components; they resolve to the real system tokens.
+   ============================================================ */
+
+:root {
+  /* Brand & accent */
+  --bd-red:          var(--brand-sys-brand-bd);        /* #D20000 BusinessDesk red */
+  --bd-red-hover:    var(--link-sys-link-hover);       /* #B80101 */
+  --bd-red-press:    var(--link-sys-link-press);       /* #9C0000 */
+  --bd-gold:         var(--sys-bg-premium);            /* #F7B238 premium */
+  --bd-gold-text:    var(--sys-text-premium);          /* #E08F00 */
+
+  /* Surfaces */
+  --surface-page:    var(--sys-bg-white);              /* #FFF */
+  --surface-card:    var(--sys-bg-white);
+  --surface-cool:    var(--sys-bg-cool-grey);          /* #F3F6F8 */
+  --surface-light:   var(--sys-bg-light);              /* #F5F5F5 */
+  --surface-dark:    var(--sys-bg-dark);               /* #222 charcoal */
+  --surface-black:   var(--sys-bg-black);              /* #000 header/footer */
+
+  /* Text */
+  --text-strong:     var(--sys-text-dark);             /* #151515 */
+  --text-body:       var(--sys-text-mid);              /* rgba(21,21,21,.8) */
+  --text-muted:      var(--sys-text-light);            /* rgba(21,21,21,.6) */
+  --text-invert:     var(--sys-text-dark-inverse);     /* #FFF */
+  --text-invert-mut: var(--sys-text-light-inverse);    /* rgba(255,255,255,.6) */
+  --text-link:       var(--link-sys-link-default);     /* #D20000 */
+
+  /* Borders */
+  --border-hard:     var(--sys-border-hard);           /* #000 */
+  --border-soft:     var(--sys-border-soft);           /* rgba(0,0,0,.1) */
+  --border-medium:   var(--sys-border-medium);         /* rgba(0,0,0,.15) */
+  --border-cool:     var(--border-sys-border-cool);    /* #E1E8EB */
+
+  /* Functional */
+  --market-up:       var(--sys-market-up);             /* green */
+  --market-down:     var(--sys-market-down);           /* red */
+  --live-red:        var(--sys-bg-live);               /* #E80000 */
+  --success:         var(--sys-success);               /* #298100 */
+  --error:           var(--sys-error);                 /* #D90000 */
+  --opinion:         var(--sys-bg-opinion);            /* #3AA8DD blue */
+
+  /* Radii — the brand is overwhelmingly square; pills for chips/buttons */
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+
+  /* Shadows — restrained; cards mostly use hairline borders, not shadow */
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-pop:  0 4px 16px rgba(0,0,0,0.12);
+  --shadow-hairline: inset 0 0 0 1px var(--border-soft);
+}

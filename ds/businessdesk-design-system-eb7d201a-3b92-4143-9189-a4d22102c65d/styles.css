@@ -1,0 +1,9 @@
+/* ============================================================
+   BusinessDesk Design System — global entry point
+   Consumers link THIS file. Import lines only.
+   ============================================================ */
+
+@import "./tokens/fig-tokens.css";   /* raw Figma Variables (colors, spacing, families) */
+@import "./tokens/fonts.css";         /* @font-face / Google substitutes + family aliases */
+@import "./tokens/typography.css";    /* type scale + utility classes */
+@import "./tokens/colors.css";        /* friendly brand color aliases */
